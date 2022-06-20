@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Notification"
+            android:textColor="#161C2B"
+            android:textSize="@dimen/_20ssp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/ic_baseline_settings_24"
+            android:backgroundTint="#161C2B"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/pushNotification"
+            android:layout_below="@+id/notification"
+            android:layout_width="@dimen/_370sdp"
+            android:layout_height="@dimen/_370sdp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/push_notification"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/noNoti"
+android:layout_below="@id/pushNotification"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textSize="@dimen/_30ssp"
+            android:textStyle="bold"
+            android:textColor="#161C2B"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

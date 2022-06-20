@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:background="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/search"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:background="@drawable/ic_search" />
+
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_58sdp"
+            android:layout_below="@+id/backArrow"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custom_chat">
+
+            <ImageView
+                android:id="@+id/ankita"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ankita" />
+
+            <TextView
+                android:id="@+id/bhuva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_toRightOf="@id/ankita"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Ankita Bhuva"
+                android:textColor="#161C2B"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/ankitaSchool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bhuva"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@id/ankita"
+                android:fontFamily="@font/poppins"
+                android:text="Tapovan School"
+                android:textColor="#6F6F79"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:id="@+id/repeat"
+                android:layout_width="@dimen/_36sdp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/repeat" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/staff"
+            android:textColor="#4E74F9"
+            android:textSize="@dimen/_14ssp" />
+
+        <RelativeLayout
+            android:id="@+id/second"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_58sdp"
+            android:layout_below="@+id/staff"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custom_chat">
+
+            <ImageView
+                android:id="@+id/kaushik"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/kaushik" />
+
+            <TextView
+                android:id="@+id/talaviya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_toRightOf="@id/kaushik"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Kaushik Talaviya"
+                android:textColor="#161C2B"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/mathTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/talaviya"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@id/kaushik"
+                android:fontFamily="@font/poppins"
+                android:text="Math Teacher"
+                android:textColor="#6F6F79"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/call" />
+
+        </RelativeLayout> // kaushik
+        <RelativeLayout
+            android:id="@+id/third"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_58sdp"
+            android:layout_below="@+id/second"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custom_chat">
+
+            <ImageView
+                android:id="@+id/bhautik"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/bhautik" />
+
+            <TextView
+                android:id="@+id/talaviya2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_toRightOf="@id/bhautik"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Bhautik Talaviya"
+                android:textColor="#161C2B"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/supervisor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/talaviya2"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@id/bhautik"
+                android:fontFamily="@font/poppins"
+                android:text="Supervisor"
+                android:textColor="#6F6F79"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:id="@+id/call2"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/call" />
+
+        </RelativeLayout> // bhautik
+        <RelativeLayout
+            android:id="@+id/forth"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_58sdp"
+            android:layout_below="@+id/third"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custom_chat">
+
+            <ImageView
+                android:id="@+id/vikas"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/vikas" />
+
+            <TextView
+                android:id="@+id/sheladiya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_toRightOf="@id/vikas"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Vikas Sheladiya"
+                android:textColor="#161C2B"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/classTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sheladiya"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@id/vikas"
+                android:fontFamily="@font/poppins"
+                android:text="Class Teacher"
+                android:textColor="#6F6F79"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:id="@+id/call3"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/call" />
+
+        </RelativeLayout> // vikas
+        <RelativeLayout
+            android:id="@+id/fifth"
+            android:layout_width="@dimen/_375sdp"
+            android:layout_height="@dimen/_58sdp"
+            android:layout_below="@+id/third"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/custom_chat">
+
+            <ImageView
+                android:id="@+id/dhruvisha"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:src="@drawable/dhruvisha" />
+
+            <TextView
+                android:id="@+id/sojitra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_toRightOf="@id/dhruvisha"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Dhruvisha Sojitra"
+                android:textColor="#161C2B"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sojitra"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_toRightOf="@id/dhruvisha"
+                android:fontFamily="@font/poppins"
+                android:text="Admin"
+                android:textColor="#6F6F79"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:id="@+id/call4"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:src="@drawable/call" />
+
+        </RelativeLayout> // dhruvisha
+
+    </RelativeLayout>
+
+</FrameLayout>

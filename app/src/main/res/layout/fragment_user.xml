@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/backArrow"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:background="@drawable/arrow_back" />
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_toRightOf="@+id/backArrow"
+            android:text="My Profile"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/_18ssp" />
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_below="@id/backArrow"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:src="@drawable/ankita_bhuva" />
+
+        <TextView
+            android:id="@+id/ankita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backArrow"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_toRightOf="@+id/icon"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Ankita Bhuva"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ankita"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/icon"
+            android:fontFamily="@font/roboto"
+            android:text="ankitabhuva@gmail.com"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/_12ssp" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_below="@+id/ankita"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_55sdp"
+            android:src="@drawable/refer" />
+
+        <TextView
+            android:id="@+id/learn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gmail"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:layout_toRightOf="@+id/share"
+            android:fontFamily="@font/roboto"
+            android:text="Refer and Learn"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/_18ssp" />
+
+        <ImageView
+            android:id="@+id/connect"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_below="@+id/share"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/connect" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/learn"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:layout_toRightOf="@+id/share"
+            android:fontFamily="@font/roboto"
+            android:text="Connected Account"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/_18ssp" />
+
+        <ImageView
+            android:id="@+id/rate"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_below="@+id/connect"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/rateapp" />
+
+        <TextView
+            android:id="@+id/rateApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:layout_toRightOf="@+id/rate"
+            android:fontFamily="@font/roboto"
+            android:text="Rate App"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/_18ssp" />
+
+
+        <ImageView
+            android:id="@+id/shareApp"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_below="@+id/rate"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:id="@+id/share_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rateApp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:layout_toRightOf="@+id/rate"
+            android:fontFamily="@font/roboto"
+            android:text="Share App"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/_18ssp" />
+
+        <ImageView
+            android:id="@+id/privacy"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_below="@+id/shareApp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/privacy" />
+
+        <TextView
+            android:id="@+id/policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/share_app"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:layout_toRightOf="@+id/rate"
+            android:fontFamily="@font/roboto"
+            android:text="Privacy Policy"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/_18ssp"
+            />
+
+        <ImageView
+            android:id="@+id/sign"
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_below="@+id/privacy"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/sign_out" />
+
+        <TextView
+            android:id="@+id/signOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/policy"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:layout_toRightOf="@+id/rate"
+            android:fontFamily="@font/roboto"
+            android:text="Sign Out"
+            android:textColor="#3F3F3F"
+            android:textSize="@dimen/_18ssp"
+            />
+    </RelativeLayout>
+
+</FrameLayout>

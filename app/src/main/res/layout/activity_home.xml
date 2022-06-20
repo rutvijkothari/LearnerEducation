@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+<ImageView
+    android:layout_width="@dimen/_355sdp"
+    android:layout_height="@dimen/_415sdp"
+    android:src="@drawable/experts"
+    android:id="@+id/expert"
+    />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/text"
+    android:text="@string/expertDis"
+    android:layout_below="@+id/expert"
+    android:layout_marginStart="@dimen/_30sdp"
+    android:textSize="@dimen/_30ssp"
+    android:textStyle="bold"
+    android:textColor="#161C2B"
+    />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/meetBtn"
+        android:layout_width="@dimen/_142sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/text"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#4E74F9"
+        android:elevation="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="Meet experts"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_17ssp" />
+</RelativeLayout>

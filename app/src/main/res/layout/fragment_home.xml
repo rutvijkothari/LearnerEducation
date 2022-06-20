@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/hello"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/bies" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="@dimen/_41sdp"
+            android:layout_height="@dimen/_41sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_marginEnd="@dimen/_35sdp"
+            android:src="@drawable/notification" />
+
+        <EditText
+            android:layout_width="@dimen/_299sdp"
+            android:layout_height="@dimen/_44sdp"
+            android:layout_below="@id/notification"
+            android:layout_marginHorizontal="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:background="@drawable/custom_edit_text"
+            android:drawableStart="@drawable/baseline_search"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Search"
+            android:paddingStart="@dimen/_20sdp"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hello"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/dm_sans_bold"
+            android:text="Explore categories"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24ssp" />
+
+        <TextView
+            android:id="@+id/seeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hello"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="See all"
+            android:textColor="#4D8AF0"
+            android:textSize="@dimen/_14ssp" />
+
+        <ImageView
+            android:id="@+id/accounting"
+            android:layout_width="@dimen/_153sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_below="@id/explore"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/accounting" />
+
+        <ImageView
+            android:id="@+id/Biology"
+            android:layout_width="@dimen/_153sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_below="@id/explore"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/accounting"
+            android:src="@drawable/biology" />
+        <ImageView
+            android:id="@+id/photography"
+            android:layout_width="@dimen/_153sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_below="@id/accounting"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/photography" />
+
+        <ImageView
+            android:id="@+id/marketing"
+            android:layout_width="@dimen/_153sdp"
+            android:layout_height="@dimen/_160sdp"
+            android:layout_below="@id/Biology"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_toRightOf="@+id/accounting"
+            android:src="@drawable/marketing" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LearnerEducation</string>
+    <string name="expertDis">True masters in\ntheir fields,\nready to teach you</string>
+    <string name="noNoti">No notification,\nyet!</string>
+    <string name="staff">Staff available for Ankita Bhuva</string>
+    <string name="learner">Welcome to\nLearner</string>
+    <string name="feesDis">It helps cover the amount an institution spends to provide educational services to students.</string>
+    <string name="dis">Discovery Education inspires educators to go beyond traditional learning with award-winning digital content and professional development.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".GurdianActivity">
+
+    <TextView
+        android:id="@+id/backArrow"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:background="@drawable/arrow_back" />
+
+    <TextView
+        android:id="@+id/addGuardian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backArrow"
+        android:layout_marginStart="@dimen/_17sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Add a Guardian"
+        android:textColor="#161C2B"
+        android:textSize="@dimen/_20ssp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumber"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addGuardian"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:hint="Mobile"
+        app:endIconMode="custom"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:startIconDrawable="@drawable/baseline_phone"
+        app:boxStrokeColor="#4E74F9"
+        app:hintTextColor="#E14B5A"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            android:maxLength="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:hint="Email"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:startIconDrawable="@drawable/baseline_mail"
+        app:endIconMode="custom"
+        app:boxStrokeColor="#4E74F9"
+        app:hintTextColor="#E14B5A"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textEmailAddress"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/accessBtn"
+        android:layout_width="@dimen/_335sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#4E74F9"
+        android:elevation="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:text="Give Access"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp" />
+
+</RelativeLayout>
